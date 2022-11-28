@@ -1,0 +1,21 @@
+public class SpeedConverter {
+    // write your code here
+     public static long toMilesPerHour (double kilometersPerHour) {
+	        if (kilometersPerHour < 0){
+	            return -1;
+	        } else {
+	            double rd = kilometersPerHour / 1.609;
+	            long roud = Math.round (rd);
+	            return roud;
+	        }
+	    }
+	 public static void printConversion (double kilometersPerHour) {
+	        long YY = toMilesPerHour(kilometersPerHour);
+	        double XX = kilometersPerHour;
+	        if (kilometersPerHour < 0) {
+	            System.out.println("Invalid Value");
+	        } else {
+	            System.out.println(XX +" km/h = "+YY+" mi/h");
+	        }
+	    }
+}
